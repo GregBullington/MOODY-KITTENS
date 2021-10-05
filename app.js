@@ -101,6 +101,7 @@ function drawKittens() {
         <div id="kitten-buttons" class="${hideButtons}">
           <button onclick="pet('${kitten.id}')">Pet</button>
           <button onclick="catnip('${kitten.id}')">Catnip</button>
+          <button class="btn-cancel" onclick="deleteKitten('${kitten.id}')">Delete</button>
         </div>
         ${ranAwayButtons}
       </div>
