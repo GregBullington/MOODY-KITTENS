@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Moody Kittens | CodeWorks</title>
+  <link rel="shortcut icon" href="moody-logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="bg-dark d-flex align-items-center p-1 space-between">
+    <div class="img-container">
+      <img src="moody-logo.png" height="60" alt="Moody Kittens">
+    </div>
+  </header>
+
+  <main class="container">
+    <div id="welcome" class="d-flex justify-content-center">
+      <div class="card p-2 text-center w-25">
+        <img src="moody-logo.png" height="250" alt="Moody Kittens">
+        <div class="mt-2">
+          <b class="text-center">Welcome to Moody Kittens!</b>
+          <p>Click "Get Started" or if you have a cat and want to start fresh "Start Over"!</p>
+          <br>
+          <button onclick="getStarted()">Get Started</button>
+          <div id="delete-kittens"></div>
+        </div>
+      </div>
+    </div>
+    <div class="p-2">
+      <div id="kittens" class="d-flex align-items-center flex-wrap">
+      </div>
+      <div class="center d-flex justify-content-center">
+        <form id=add-kitten class="hidden card2 d-flex align-items-center" onsubmit="addKitten(event)">
+          <input placeholder="Name your kitten!" style="border-bottom: 1px solid var(--primary)" type="text"
+            name="kittenName" />
+          <input type="image" name="submit" src="CatsPaw.png" style="width: 75px" style="border-bottom: none;"
+            alt="Add Kitten" class="highlight" />
+        </form>
+      </div>
+  </main>
+
+  <footer class="bg-dark text-light p-2 d-flex align-items-center justify-content-center">
+    <small>Created with <span style="color: pink">&hearts;</span> By Greg... and Codeworks :P</small>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
